@@ -7,6 +7,7 @@
 function charts(sample) {
   // Using D3 to read in the samples.json file which are arrays or arrays #rays-on-rays
   d3.json("samples.json").then((data) => {
+    console.log(data);
     // Importing the "sample" array because it contains id, otu_ids, samples_values and otu_labels.
     var samples = data.samples;
     // Filtering and sort the id array so I can grab the first array.
